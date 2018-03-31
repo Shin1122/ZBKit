@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^TextDidChanged)(NSString *text);
+
 @interface ZBTextField : UITextField
+
+-(instancetype)initWithPlachHolder:(NSString *)placeHolder textDidChanged:(TextDidChanged)changed;
+
+
+-(instancetype)initWithFrame:(CGRect)frame plachHolder:(NSString *)placeHolder textDidChanged:(TextDidChanged)changed;
 
 @end

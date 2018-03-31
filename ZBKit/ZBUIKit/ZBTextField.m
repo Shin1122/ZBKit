@@ -8,14 +8,44 @@
 
 #import "ZBTextField.h"
 
+@interface ZBTextField(){
+
+    TextDidChanged _didChanged;
+}
+@end
+
+
 @implementation ZBTextField
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)initWithPlachHolder:(NSString *)placeHolder textDidChanged:(TextDidChanged)changed{
+    if (!self) {
+        self = [super init];
+    }
+    if (self) {
+        self.placeholder = placeHolder;
+        _didChanged = changed;
+       
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textDidChanged:) name:UITextFieldTextDidChangeNotification object:nil];
+    }
+    return self;
 }
-*/
+
+-(instancetype)initWithFrame:(CGRect)frame plachHolder:(NSString *)placeHolder textDidChanged:(TextDidChanged)changed{
+    self = [super initWithFrame:frame];
+    self = [self initWithPlachHolder:placeHolder textDidChanged:changed];
+    return self;
+    
+}
+
+
+
+- (void)textDidChanged:(id)sender{
+    
+    if (self && _didChanged) {
+        _didChanged(self.text);
+    }
+}
+
+
 
 @end

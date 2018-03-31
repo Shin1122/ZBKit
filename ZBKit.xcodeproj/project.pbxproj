@@ -23,7 +23,7 @@
 		540CA270206FC68D0057994D /* ZBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CA26F206FC68D0057994D /* ZBFont.m */; };
 		540CA273206FD3D60057994D /* ZBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CA272206FD3D60057994D /* ZBButton.m */; };
 		540CA276206FD3F80057994D /* ZBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CA275206FD3F80057994D /* ZBTextField.m */; };
-		540CA279206FD4080057994D /* ZBTextVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CA278206FD4080057994D /* ZBTextVIew.m */; };
+		540CA27C206FD9E40057994D /* ZBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CA27B206FD9E40057994D /* ZBTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,8 @@
 		540CA272206FD3D60057994D /* ZBButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBButton.m; sourceTree = "<group>"; };
 		540CA274206FD3F80057994D /* ZBTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTextField.h; sourceTree = "<group>"; };
 		540CA275206FD3F80057994D /* ZBTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTextField.m; sourceTree = "<group>"; };
-		540CA277206FD4080057994D /* ZBTextVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTextVIew.h; sourceTree = "<group>"; };
-		540CA278206FD4080057994D /* ZBTextVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTextVIew.m; sourceTree = "<group>"; };
+		540CA27A206FD9E40057994D /* ZBTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTextView.h; sourceTree = "<group>"; };
+		540CA27B206FD9E40057994D /* ZBTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +204,8 @@
 				540CA272206FD3D60057994D /* ZBButton.m */,
 				540CA274206FD3F80057994D /* ZBTextField.h */,
 				540CA275206FD3F80057994D /* ZBTextField.m */,
-				540CA277206FD4080057994D /* ZBTextVIew.h */,
-				540CA278206FD4080057994D /* ZBTextVIew.m */,
+				540CA27A206FD9E40057994D /* ZBTextView.h */,
+				540CA27B206FD9E40057994D /* ZBTextView.m */,
 			);
 			path = ZBUIKit;
 			sourceTree = "<group>";
@@ -353,12 +353,12 @@
 			files = (
 				540CA25D206FBF9C0057994D /* ZBLabel.m in Sources */,
 				540CA227206FBA460057994D /* ViewController.m in Sources */,
-				540CA279206FD4080057994D /* ZBTextVIew.m in Sources */,
 				540CA268206FC09C0057994D /* ZBColor.m in Sources */,
 				540CA260206FBFB30057994D /* ZBLabelButton.m in Sources */,
 				540CA273206FD3D60057994D /* ZBButton.m in Sources */,
 				540CA276206FD3F80057994D /* ZBTextField.m in Sources */,
 				540CA263206FBFC30057994D /* ZBViewLabel.m in Sources */,
+				540CA27C206FD9E40057994D /* ZBTextView.m in Sources */,
 				540CA232206FBA460057994D /* main.m in Sources */,
 				540CA270206FC68D0057994D /* ZBFont.m in Sources */,
 				540CA224206FBA460057994D /* AppDelegate.m in Sources */,
